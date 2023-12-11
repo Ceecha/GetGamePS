@@ -1,8 +1,9 @@
+//SCRIPT RENTAL PS
 #include <iostream>
 #include <algorithm>
 using namespace std;
 //test
-// Membuat struct untuk menyimpan data penyewa
+
 struct Penyewa {
     string nama; // Nama penyewa
     int id; // ID penyewa
@@ -12,7 +13,7 @@ struct Penyewa {
     Penyewa* next; // Pointer ke penyewa selanjutnya
 };
 
-// Membuat class untuk menyimpan array of linked lists
+
 class RentalPS {
     private:
         int size; // Ukuran array
@@ -99,7 +100,7 @@ class RentalPS {
 
        
         
-// Fungsi untuk mengurutkan data penyewa berdasarkan nama
+
 static bool comparePenyewa(Penyewa* a, Penyewa* b) {
     return a->nama < b->nama;
 }
