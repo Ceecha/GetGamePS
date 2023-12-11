@@ -40,12 +40,12 @@ class RentalPS {
             delete [] arr;
         }
 
-        // Fungsi untuk menghitung indeks array berdasarkan id
+        
         int hash (int id) {
             return id % size;
         }
 
-        // Fungsi untuk menambahkan data penyewa ke array of linked lists
+        
         void tambah (string nama, int id, int versi, bool stick, bool tv) {
             Penyewa* baru = new Penyewa;
             baru->nama = nama;
@@ -66,7 +66,7 @@ class RentalPS {
             }
         }
 
-        // Fungsi untuk menghapus data penyewa dari array of linked lists
+        
         void hapus (int id) {
             int indeks = hash (id);
             Penyewa* temp = arr [indeks];
@@ -87,7 +87,7 @@ class RentalPS {
             delete temp;
         }
 
-        // Fungsi untuk mencari data penyewa dari array of linked lists
+        
         Penyewa* cari (int id) {
             int indeks = hash (id);
             Penyewa* temp = arr [indeks];
@@ -97,8 +97,8 @@ class RentalPS {
             return temp;
         }
 
-        // Fungsi untuk mengurutkan data penyewa berdasarkan nama
-        // Fungsi untuk mengurutkan data penyewa berdasarkan nama
+       
+        
 // Fungsi untuk mengurutkan data penyewa berdasarkan nama
 static bool comparePenyewa(Penyewa* a, Penyewa* b) {
     return a->nama < b->nama;
@@ -142,18 +142,18 @@ void urutkan() {
             int top = -1; // Indeks top dari stack
             // Membuat queue untuk menyimpan data penyewa yang menggunakan stick
             Penyewa** queue = new Penyewa* [size];
-            int front = 0; // Indeks front dari queue
-            int rear = -1; // Indeks rear dari queue
-            // Menelusuri array of linked lists
+            int front = 0;
+            int rear = -1; 
+            
             for (int i = 0; i < size; i++) {
                 Penyewa* temp = arr [i];
                 while (temp != NULL) {
-                    // Jika menggunakan PS, masukkan ke stack
+                    //menggunakan PS, masukkan ke stack
                     if (temp->versi > 0) {
                         top++;
                         stack [top] = temp;
                     }
-                    // Jika menggunakan stick, masukkan ke queue
+                    // menggunakan stick, masukkan ke queue
                     if (temp->stick) {
                         rear++;
                         queue [rear] = temp;
@@ -188,7 +188,7 @@ void urutkan() {
         }
 };
 
-// Fungsi untuk menampilkan menu pilihan
+
 void menu () {
     cout << "Menu pilihan:\n";
     cout << "1. Tambah data penyewa\n";
