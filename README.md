@@ -1,3 +1,5 @@
+Buka file untuk menyimpannya kemudian git bash
+
 ### 1. Mendownload (Clone) Repository:
 
 git clone https://github.com/afifamrullh/GetGamePS
