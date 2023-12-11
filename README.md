@@ -1,6 +1,6 @@
 ### 1. Mendownload (Clone) Repository:
 
-git clone https://github.com/Ceecha/GetGamePS
+git clone https://github.com/afifamrullh/GetGamePS
 
 
 
