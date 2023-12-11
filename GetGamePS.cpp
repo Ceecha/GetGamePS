@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
+//test
 // Membuat struct untuk menyimpan data penyewa
 struct Penyewa {
     string nama; // Nama penyewa
